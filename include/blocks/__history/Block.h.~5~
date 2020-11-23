@@ -24,7 +24,6 @@ enum { Block_Air,
 	   Block_Bedrock,
 	   Block_Coarse,
 	   Block_Door_Top,
-	   Block_Door_Bottom,
        Blocks_Count };
 
 void Block_Init();
