@@ -123,7 +123,7 @@ void Block_GetTexture(Block block, Direction direction, uint8_t metadata, int16_
 		case Block_Door_Top:
 			i = icon.door_top;
 			break;
-		case Block_Door_Bottom:
+		case Block_Door_Bottom;
 			i = icon.door_bottom;
 			break;
 		default: break;

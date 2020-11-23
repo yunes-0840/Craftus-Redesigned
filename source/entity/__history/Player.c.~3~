@@ -39,6 +39,7 @@ void Player_Init(Player* player, World* world) {
 		player->inventory[l++] = (ItemStack){Block_Cobblestone, 0, 1};
 		player->inventory[l++] = (ItemStack){Block_Sand, 0, 1};
 		player->inventory[l++] = (ItemStack){Block_Log, 0, 1};
+		player->inventory[1++] = (ItemStack){Block_Gravel, 0, 1};
 		player->inventory[l++] = (ItemStack){Block_Leaves, 0, 1};
 		player->inventory[l++] = (ItemStack){Block_Glass, 0, 1};
 		player->inventory[l++] = (ItemStack){Block_Stonebrick, 0, 1};
@@ -46,10 +47,6 @@ void Player_Init(Player* player, World* world) {
 		player->inventory[l++] = (ItemStack){Block_Planks, 0, 1};
 		for (int i = 0; i < 16; i++) player->inventory[l++] = (ItemStack){Block_Wool, i, 1};
 		player->inventory[l++] = (ItemStack){Block_Bedrock, 0, 1};
-		player->inventory[l++] = (ItemStack){Block_Gravel, 0, 1};
-		player->inventory[l++] = (ItemStack){Block_Coarse, 0, 1};
-		player->inventory[l++] = (ItemStack){Block_Door_Top, 0, 1};
-		player->inventory[l++] = (ItemStack){Block_Door_Bottom, 0, 1};
 
 		for (int i = 0; i < INVENTORY_QUICKSELECT_MAXSLOTS; i++) player->quickSelectBar[i] = (ItemStack){Block_Air, 0, 0};
 	}
