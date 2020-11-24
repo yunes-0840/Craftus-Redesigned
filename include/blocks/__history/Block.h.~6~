@@ -25,12 +25,6 @@ enum { Block_Air,
 	   Block_Coarse,
 	   Block_Door_Top,
 	   Block_Door_Bottom,
-	   Block_Snow_Grass,
-	   Block_Snow,
-	   Block_Obsidian,
-	   Block_Netherrack,
-	   Block_Sandstone,
-	   Block_Smooth_Stone,
        Blocks_Count };
 
 void Block_Init();
