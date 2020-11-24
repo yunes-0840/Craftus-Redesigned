@@ -15,8 +15,7 @@ static Texture_Map textureMap;
 	    A(leaves_oak, "leaves_oak.png"), A(glass, "glass.png"), A(brick, "brick.png"), A(oakplanks, "planks_oak.png"),         \
 		A(wool, "wool.png"), A(bedrock, "bedrock.png"), A(gravel, "gravel.png"), A(coarse, "coarse_dirt.png"),                 \
 		A(door_top, "door_top.png"), A(door_bottom, "door_bottom.png"), A(snow_grass_side, "snow_grass_side.png"), A(snow, "snow.png"),\
-		A(obsidian, "obsidian.png"), A(sandstone_side, "sandstone_side.png"), A(sandstone_top, "sandstone_top.png"), A(sandstone_bottom, "sandstone_bottom.png"), \
-		A(netherrack, "netherrack.png"), A(smooth_stone, "smooth_stone.png")
+        A(obsidian, "obsidian.png")
 
 #define A(i, n) PPRX n
 const char* texture_files[] = {TEXTURE_FILES};
@@ -45,11 +44,6 @@ static struct {
 	Texture_MapIcon snow_grass_side;
 	Texture_MapIcon snow;
 	Texture_MapIcon obsidian;
-	Texture_MapIcon netherrack;
-	Texture_MapIcon sandstone_side;
-	Texture_MapIcon sandstone_top;
-	Texture_MapIcon sandstone_bottom;
-	Texture_MapIcon smooth_stone;
 } icon;
 
 void Block_Init() {
@@ -170,9 +164,6 @@ void Block_GetTexture(Block block, Direction direction, uint8_t metadata, int16_
 					break;
 			}
 			break;
-		case Block_Smooth_Stone:
-			i = icon.smooth_stone;
-			break;
 		default: break;
 	}
 	out_uv[0] = i.u;
@@ -210,4 +201,4 @@ bool Block_Opaque(Block block, uint8_t metadata) { return block != Block_Air && 
 const char* BlockNames[Blocks_Count] = {"Air",    "Stone", "Dirt",	 "Grass",  "Cobblestone", "Sand", "Log",
 					"Leaves", "Glass", "Stone Bricks", "Bricks", "Planks",      "Wool", "Bedrock", "Gravel",
 					"Water", "Coarse", "Door_Top", "Door_Bottom", "Snow_Grass", "Snow", "Obsidian",
-					"Netherrack", "Sandstone", "Smooth_Stone"};
+					"Netherrack", "Sandstone"};
