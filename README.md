@@ -1,7 +1,7 @@
 Craftus Redisigned is a modified version of Craftus Reloaded : https://github.com/RSDuck/craftus_reloaded.
 
-After launching it for the first time, you can change the controls in `sd:/craftus_reskined/options.ini`.
-You can also change the setting in `sd:/craftus_reskined/options.ini`.
+After launching it for the first time, you can change the controls in `sd:/craftus_redisigned/options.ini`.
+You can also change the setting in `sd:/craftus_redisigned/options.ini`.
 
 ## Controls
 
@@ -31,6 +31,7 @@ You can also change the setting in `sd:/craftus_reskined/options.ini`.
 
 
 # Credits
+* RSDuck who made Craftus and Craftus Reloaded
 * People who made 3DS homebrew possible
     * Especially smea for 3dscraft which is good place for ~~stealing ideas~~ inspiration
     * Contributors of the 3dbrew.org wiki and ctrulib
