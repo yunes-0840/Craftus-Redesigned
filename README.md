@@ -41,7 +41,7 @@ You can also change the setting in `sd:/craftus_redesigned/options.ini`.
 * Of course all other MC devs, how could I forget them?
 * All people who worked on the libraries Craftus is depending on(see the dependencies folder)
 
-#Todo
+# Todo
 -*Replace Smea generation with old Craftus generation.*
 -*Add entities such as grass, flowers and a torch.*
 -*Add lighting.*
