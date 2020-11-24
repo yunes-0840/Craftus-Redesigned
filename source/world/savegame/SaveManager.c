@@ -12,8 +12,8 @@
 #define mkdirFlags S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH
 
 void SaveManager_InitFileSystem() {
-	mkdir("sdmc:/craftus", mkdirFlags);
-	mkdir("sdmc:/craftus/saves", mkdirFlags);
+	mkdir("sdmc:/craftus_redesigned", mkdirFlags);
+	mkdir("sdmc:/craftus_redesigned/saves", mkdirFlags);
 }
 
 void SaveManager_Init(SaveManager* mgr, Player* player) {
@@ -31,7 +31,7 @@ void SaveManager_Deinit(SaveManager* mgr) { vec_deinit(&mgr->superchunks); }
 void SaveManager_Load(SaveManager* mgr, char* path) {
 	char buffer[256];
 
-	sprintf(buffer, "sdmc:/craftus/saves/%s", path);
+	sprintf(buffer, "sdmc:/craftus_redesigned/saves/%s", path);
 	mkdir(buffer, mkdirFlags);
 	chdir(buffer);
 

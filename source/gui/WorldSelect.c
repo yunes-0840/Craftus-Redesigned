@@ -27,14 +27,14 @@ static vec_t(WorldInfo) worlds;
 void WorldSelect_ScanWorlds() {
 	vec_clear(&worlds);
 
-	DIR* directory = opendir("sdmc:/craftus/saves");
+	DIR* directory = opendir("sdmc:/craftus_redesigned/saves");
 
 	char buffer[512];
 
 	struct dirent* entry;
 
 	while ((entry = readdir(directory))) {
-		sprintf(buffer, "sdmc:/craftus/saves/%s/level.mp", entry->d_name);
+		sprintf(buffer, "sdmc:/craftus_redesigned/saves/%s/level.mp", entry->d_name);
 		if (access(buffer, F_OK) != -1) {
 			mpack_tree_t tree;
 			mpack_tree_init_file(&tree, buffer, 0);

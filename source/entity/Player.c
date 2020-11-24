@@ -86,6 +86,12 @@ bool Player_CanMove(Player* player, float newX, float newY, float newZ) {
 						return false;
 					}
 				}
+				if (World_GetBlock(player->world, pX, pY, pZ) == Block_Door_Top) {
+					return true;
+				}
+				if (World_GetBlock(player->world, pX, pY, pZ) == Block_Door_Bottom) {
+					return true;
+				}
 			}
 		}
 	}
