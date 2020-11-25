@@ -167,6 +167,7 @@ void Block_GetTexture(Block block, Direction direction, uint8_t metadata, int16_
 			switch (direction) {
 				case Direction_Bottom:
 					i = icon.sandstone_bottom;
+					break;
 				case Direction_Top:
 					i = icon.sandstone_top;
 					break;
@@ -182,6 +183,7 @@ void Block_GetTexture(Block block, Direction direction, uint8_t metadata, int16_
 			switch (direction) {
 				case Direction_Bottom:
 					i = icon.oakplanks;
+					break;
 				case Direction_Top:
 					i = icon.crafting_table_top;
 					break;
@@ -194,6 +196,7 @@ void Block_GetTexture(Block block, Direction direction, uint8_t metadata, int16_
 			switch (direction) {
 				case Direction_Bottom:
 					i = icon.dirt;
+					break;
 				case Direction_Top:
 					i = icon.grass_path_top;
 					break;
