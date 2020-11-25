@@ -42,11 +42,11 @@ You can also change the settings in `sd:/craftus_redesigned/options.ini`.
 * All people who worked on the libraries Craftus is depending on(see the dependencies folder)
 
 # Todo
--*Replace Smea generation with old Craftus generation.*
+-*Replace Smea generation with old Craftus generation*
 
--*Add entities such as grass, flowers and a torch.*
+-*Add entities such as grass, flowers and a torch*
 
--*Add lighting.*
+-*Add lighting*
 
 -*Add sound effects*
 
