@@ -56,6 +56,8 @@ void Player_Init(Player* player, World* world) {
 		player->inventory[l++] = (ItemStack){Block_Netherrack, 0, 1};
 		player->inventory[l++] = (ItemStack){Block_Sandstone, 0, 1};
 		player->inventory[l++] = (ItemStack){Block_Smooth_Stone, 0, 1};
+		player->inventory[l++] = (ItemStack){Block_Crafting_Table, 0, 1};
+		player->inventory[l++] = (ItemStack){Block_Grass_Path, 0, 1};
 
 		for (int i = 0; i < INVENTORY_QUICKSELECT_MAXSLOTS; i++) player->quickSelectBar[i] = (ItemStack){Block_Air, 0, 0};
 	}
@@ -85,12 +87,6 @@ bool Player_CanMove(Player* player, float newX, float newY, float newZ) {
 							 1.f, 1.f)) {
 						return false;
 					}
-				}
-				if (World_GetBlock(player->world, pX, pY, pZ) == Block_Door_Top) {
-					return true;
-				}
-				if (World_GetBlock(player->world, pX, pY, pZ) == Block_Door_Bottom) {
-					return true;
 				}
 			}
 		}

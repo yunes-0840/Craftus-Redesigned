@@ -34,7 +34,7 @@ typedef struct {
 
 	float breakPlaceTimeout;
 
-	ItemStack inventory[22 + 16];
+	ItemStack inventory[24 + 16];
 
 	int quickSelectBarSlots;
 	int quickSelectBarSlot;

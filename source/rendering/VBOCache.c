@@ -12,7 +12,7 @@ void VBOCache_Init() {
 	vec_init(&freedBlocks);
 	LightLock_Init(&lock);
 }
-void VBOCache_Free() {
+void VBOCache_Deinit() {
 	VBO_Block block;
 	int i;
 	vec_foreach (&freedBlocks, block, i) { linearFree(block.memory); }

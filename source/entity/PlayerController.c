@@ -152,7 +152,7 @@ void PlayerController_Init(PlayerController* ctrl, Player* player) {
 
 	bool elementMissing = false;
 
-	const char path[] = "sdmc:/craftus_redisigned/options.ini";
+	const char path[] = "sdmc:/craftus_redesigned/options.ini";
 	if (access(path, F_OK) != -1) {
 		ini_t* cfg = ini_load(path);
 

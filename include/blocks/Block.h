@@ -31,7 +31,9 @@ enum { Block_Air,
 	   Block_Netherrack,
 	   Block_Sandstone,
 	   Block_Smooth_Stone,
-       Blocks_Count };
+	   Block_Crafting_Table,
+	   Block_Grass_Path,
+	   Blocks_Count };
 
 void Block_Init();
 void Block_Deinit();

@@ -1,12 +1,9 @@
-#ifndef VBOCACHE_H_INCLUDED
-#define VBOCACHE_H_INCLUDED
 #pragma once
 
-#include <stdbool.h>
 #include <stdio.h>
 
 void VBOCache_Init();
-void VBOCache_Free();
+void VBOCache_Deinit();
 
 typedef struct {
 	size_t size;
@@ -15,5 +12,3 @@ typedef struct {
 
 VBO_Block VBO_Alloc(size_t size);
 void VBO_Free(VBO_Block block);
-
-#endif  // !VBOCACHE_H_INCLUDED

@@ -124,7 +124,7 @@ void PolyGen_Init(World* world_, Player* player_) {
 void PolyGen_Deinit() {
 	vec_deinit(&vboUpdates);
 
-	VBOCache_Free();
+	VBOCache_Deinit();
 
 	vec_deinit(&floodfill_queue);
 }

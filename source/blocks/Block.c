@@ -16,7 +16,8 @@ static Texture_Map textureMap;
 		A(wool, "wool.png"), A(bedrock, "bedrock.png"), A(gravel, "gravel.png"), A(coarse, "coarse_dirt.png"),                 \
 		A(door_top, "door_top.png"), A(door_bottom, "door_bottom.png"), A(snow_grass_side, "snow_grass_side.png"), A(snow, "snow.png"),\
 		A(obsidian, "obsidian.png"), A(sandstone_side, "sandstone_side.png"), A(sandstone_top, "sandstone_top.png"), A(sandstone_bottom, "sandstone_bottom.png"), \
-		A(netherrack, "netherrack.png"), A(smooth_stone, "smooth_stone.png")
+		A(netherrack, "netherrack.png"), A(smooth_stone, "smooth_stone.png"), A(grass_path_side, "grass_path_side.png"), A(grass_path_top, "grass_path_top.png"), \
+		A(crafting_table_side, "crafting_table_side.png"), A(crafting_table_top, "crafting_table_top.png")
 
 #define A(i, n) PPRX n
 const char* texture_files[] = {TEXTURE_FILES};
@@ -50,6 +51,10 @@ static struct {
 	Texture_MapIcon sandstone_top;
 	Texture_MapIcon sandstone_bottom;
 	Texture_MapIcon smooth_stone;
+	Texture_MapIcon grass_path_side;
+	Texture_MapIcon grass_path_top;
+	Texture_MapIcon crafting_table_side;
+	Texture_MapIcon crafting_table_top;
 } icon;
 
 void Block_Init() {
@@ -173,6 +178,30 @@ void Block_GetTexture(Block block, Direction direction, uint8_t metadata, int16_
 		case Block_Smooth_Stone:
 			i = icon.smooth_stone;
 			break;
+		case Block_Crafting_Table:
+			switch (direction) {
+				case Direction_Bottom:
+					i = icon.oakplanks;
+				case Direction_Top:
+					i = icon.crafting_table_top;
+					break;
+				default:
+					i = icon.crafting_table_side;
+					break;
+			}
+			break;
+		case Block_Grass_Path:
+			switch (direction) {
+				case Direction_Bottom:
+					i = icon.dirt;
+				case Direction_Top:
+					i = icon.grass_path_top;
+					break;
+				default:
+					i = icon.grass_path_side;
+					break;
+			}
+			break;
 		default: break;
 	}
 	out_uv[0] = i.u;
@@ -210,4 +239,4 @@ bool Block_Opaque(Block block, uint8_t metadata) { return block != Block_Air && 
 const char* BlockNames[Blocks_Count] = {"Air",    "Stone", "Dirt",	 "Grass",  "Cobblestone", "Sand", "Log",
 					"Leaves", "Glass", "Stone Bricks", "Bricks", "Planks",      "Wool", "Bedrock", "Gravel",
 					"Water", "Coarse", "Door_Top", "Door_Bottom", "Snow_Grass", "Snow", "Obsidian",
-					"Netherrack", "Sandstone", "Smooth_Stone"};
+					"Netherrack", "Sandstone", "Smooth_Stone", "Crafting_Table", "Grass_Path"};
