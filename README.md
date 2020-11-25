@@ -47,3 +47,15 @@ You can also change the settings in `sd:/craftus_redesigned/options.ini`.
 -*Add entities such as grass, flowers and a torch.*
 
 -*Add lighting.*
+
+-*Add sound effects*
+
+-*Add background music*
+
+-*Make doors actualy work*
+
+-*Make semi-transparent blocks possible*
+
+-*Make sky better*
+
+-*Add inventory slider*
