@@ -25,6 +25,11 @@ void BlockEvent_RandomTick(World* world, Chunk* chunk, int x[], int y[], int z[]
 						Chunk_SetBlock(chunk, px, py, pz, Block_Dirt);
 					}
 					break;
+				case Block_Grass_Path:
+					if (Block_Opaque(Chunk_GetBlock(chunk, px, py + 1, pz), Chunk_GetMetadata(chunk, px, py + 1, pz))) {
+						Chunk_SetBlock(chunk, px, py, pz, Block_Dirt);
+					}
+					break;
 				default:
 					break;
 			}
