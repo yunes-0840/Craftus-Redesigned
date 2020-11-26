@@ -7,23 +7,23 @@ You can also change the settings in `sd:/craftus_redesigned/options.ini`.
 
 | Category | Action | OLD 3DS | NEW 3DS |
 | ------------- | ------------- | ------------- | ------------- |
-| Blocks | Place Block | L | L |
-| Blocks | Break Block | R | R |
+| Blocks | Place Block | L | ZL |
+| Blocks | Break Block | R | ZR |
 |  |  |  |  |
-| Move | Forward | X | Circle Pad (Up) |
-| Move | Backward | B | Circle Pad (Down) |
-| Move | Left | Y | Circle Pad (Left) |
-| Move | Right | A | Circle Pad (Right) |
-| Move | Jump | DPad (Up) | ZL |
-| Move | Shift | DPad (Down) | ZR |
+| Move | Forward | Circle Pad (Up) | Circle Pad (Up) |
+| Move | Backward | Circle Pad (Down) | Circle Pad (Down) |
+| Move | Left | Circle Pad (Left) | Circle Pad (Left) |
+| Move | Right | Circle Pad (Right) | Circle Pad (Right) |
+| Move | Jump | DPad (Up) | A/B/DPad (Up) |
+| Move | Shift | DPad (Down) | Y/X/DPad (Down) |
 |  |  |  |  |
-| Camera | Up | Circle Pad (Up) | C-Stick (Up) |
-| Camera | Down | Circle Pad (Down) | C-Stick (Down) |
-| Camera | Left | Circle Pad (Left) | C-Stick (Left) |
-| Camera | Right | Circle Pad (Right) | C-Stick (Right) |
+| Camera | Up | X | C-Stick (Up) |
+| Camera | Down | B | C-Stick (Down) |
+| Camera | Left | Y | C-Stick (Left) |
+| Camera | Right | A | C-Stick (Right) |
 |  |  |  |  |
-| Inventory | Switch Block | DPad (Left) | DPad (Left) |
-| Inventory | Switch Block | DPad (Right) | DPad (Right) |
+| Inventory | Switch Block | DPad (Left) | L/DPad (Left) |
+| Inventory | Switch Block | DPad (Right) | R/DPad (Right) |
 |  |  |  |  |
 | Commands | Open Console | Select | Select |
 |  |  |  |  |
