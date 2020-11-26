@@ -1,8 +1,9 @@
 #include <entity/Player.h>
-
 #include <misc/Collision.h>
 
+
 void Player_Init(Player* player, World* world) {
+
 	player->position = f3_new(0.f, 0.f, 0.f);
 
 	player->bobbing = 0.f;
