@@ -12,6 +12,12 @@
 #include <rendering/Clouds.h>
 #include <rendering/Hand.h>
 
+#include<stdio.h>
+#include<stdlib.h>
+#include<time.h>
+
+int sky_time = 0;
+
 static Player* player;
 static World* world;
 
@@ -83,6 +89,7 @@ void WorldRenderer_Deinit() {
 }
 
 static void renderWorld() {
+
 	C3D_FogColor(0xffd990);
 
 	memset(chunkRendered, 0, sizeof(chunkRendered));

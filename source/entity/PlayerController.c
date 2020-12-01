@@ -63,11 +63,11 @@ const PlayerControlScheme n3ds_default_scheme = {.forward = K3DS_CPAD_UP,
 						 .lookDown = K3DS_CSTICK_DOWN,
 						 .placeBlock = K3DS_ZL,
 						 .breakBlock = K3DS_ZR,
-						 .jump = K3DS_A && K3DS_B,
-						 .switchBlockLeft = K3DS_L,
-						 .switchBlockRight = K3DS_R,
+						 .jump = K3DS_A && K3DS_B && K3DS_DUP,
+						 .switchBlockLeft = K3DS_L && K3DS_DLEFT,
+						 .switchBlockRight = K3DS_R && K3DS_DRIGHT,
 						 .openCmd = K3DS_SELECT,
-						 .crouch = K3DS_Y && K3DS_X};
+						 .crouch = K3DS_Y && K3DS_X && K3DS_DDOWN};
 static void convertPlatformInput(InputData* input, float ctrls[], bool keysdown[], bool keysup[]) {
 #define reg_bin_key(i, k)                                                         \
 	ctrls[(i)] = (float)((input->keysdown & (k)) || (input->keysheld & (k))); \

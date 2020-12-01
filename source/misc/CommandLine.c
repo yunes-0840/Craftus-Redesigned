@@ -26,7 +26,7 @@ void CommandLine_Execute(World* world, Player* player, const char* text) {
 			float x, y, z;
 			if (sscanf(&text[1], "tp %f %f %f", &x, &y, &z) == 3) {
 				player->position.x = x;
-				player->position.y = y;
+				player->position.y = y + 1;
 				player->position.z = z;
 				DebugUI_Log("teleported to %f, %f %f", x, y, z);
 				return;
