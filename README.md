@@ -1,3 +1,7 @@
+You may know me for my previous name GamesSanti or for my modification on Craftus Reloaded. I did this to learn more about programming and to have some fun, the idea was stolen from @duffparis, which posted some years ago a modified version of his to reddit, as nothing was published, I made it myself. 
+Tried to get in contact with duff, had no success but, he follows me on github now so I least know that he ain’t dead. @cooolgamer also hopped in this project to help me but nothing much was done, also, but he is still a cool person, go check his other stuff.
+Anyways, I’ve stopped doing this because I didn’t find it enjoyable anymore, if you want to do anything with this, go all on out, I wont touch this project anymore.
+
 Craftus Redisigned is a modified version of Craftus Reloaded : https://github.com/RSDuck/craftus_reloaded.
 
 After launching it for the first time, you can change the controls in `sd:/craftus_redesigned/options.ini`.
